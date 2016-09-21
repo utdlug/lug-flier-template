@@ -1,0 +1,76 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[letterpaper, oneside]{article}
+\usepackage[margin=0.5in, bottom=1.3in]{geometry}
+
+\usepackage{fancyhdr}
+\fboxsep0pt
+\renewcommand{\headrulewidth}{0pt}
+\setlength\parindent{0pt}
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\definecolor{utdgreen}{HTML}{008542}
+\definecolor{utdorange}{HTML}{C75B12}
+\cfoot{\fontsize{8}{10} \selectfont This flyer is published by The Linux Users Group, a registered student organization. This flyer is not an official publication of UT Dallas and does not represent the views of the university or its officers. The University of Texas at Dallas is an Equal Opportunity/Affirmative Action University. Students with disabilities needing special assistance to attend please call 972-883-2946. Texas Relay Operation: 1-800-RELAYTX.}
+
+% Uncomment for full-page background
+% We used 1700 x 2200 px in the past
+\usepackage{background}
+\backgroundsetup{
+	scale=1,
+	angle=0,
+	opacity=.9,  %% adjust
+	%contents={\includegraphics[width=\paperwidth,height=\paperheight]{fullpagebg.jpg}}
+}
+
+\begin{document}
+\noindent\includegraphics[width=\textwidth]{logo.png}
+%
+% Current event's picture
+% About 2250 x 1200px
+\noindent\includegraphics[width=\textwidth]{current.png}
+\Large
+{\fontfamily{pag}\selectfont
+	\begin{center}
+		\Huge\textbf{Event Title}\\
+	\end{center}
+	\LARGE
+	\begin{center}
+		Long Description of event.\\\bigskip
+		\Huge
+		\textbf{Sat MM/DD 5:00 PM --- 8:00 PM ECSS 2.306}
+	\end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Large
+\color{white}
+\begin{center}
+	\colorbox{utdgreen}
+	{\parbox{0.48\textwidth}
+		{\fontfamily{pcr}\selectfont
+			{
+				\begin{center}
+					\textbf{lug.utdallas.edu\\
+						facebook.com/groups/utdlug}
+				\end{center}
+			}
+		}
+	}
+	\colorbox{utdorange}
+	{\parbox{0.48\textwidth}
+		{\fontfamily{pcr}\selectfont
+			{
+				\begin{center}
+					\textbf{lug.utdallas.edu/chat\\
+						\#utdlug on irc.oftc.net}
+				\end{center}
+			}
+		}
+	}
+\end{center}
+\end{document}
